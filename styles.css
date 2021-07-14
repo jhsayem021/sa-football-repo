@@ -85,10 +85,7 @@
      width: 200px;
       
  }
- /* .vote-player h1{
-     margin-left: 300px;
-     text-align: center;
- } */
+
  .vote-player form{
      margin: 50px 100px 50px 100px;
  }
@@ -103,6 +100,28 @@ form button{
     width: 100px;
     
 }
+
+/* Match Shedule */
+
+.match-shedule{
+    background-color: rgb(182, 105, 206);
+}
+
+.calander{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.date  {
+    height: 150px;
+    width: 300px;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
  /* footer style  */
 .container{
     display: flex;
