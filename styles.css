@@ -49,8 +49,9 @@
  .players{
      display: grid;
      grid-template-columns: repeat(3,1fr);
+     grid-gap:30px;
      
-     margin: 70px 220px 0px 220px;
+     margin: 70px 220px 100px 220px;
      
      
  }
@@ -75,6 +76,7 @@
      justify-content: center;
      align-items: center;
  }
+
  .vote-player{
      
      padding:50px 0px 50px 0px ;
@@ -103,10 +105,17 @@ form button{
 
 /* Match Shedule */
 
-.match-shedule{
-    background-color: rgb(182, 105, 206);
+.match-shedule{  
+    padding-top: 100px ;
+    padding-bottom: 100px;
+    background-image: linear-gradient(rgb(119, 150, 135),rgb(180, 149, 149));
 }
+.match-shedule h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
 
+}
 .calander{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -115,11 +124,10 @@ form button{
     height: 150px;
     width: 300px;
     background-color: lightskyblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+    padding: 30px;
+    margin: 50px;
     border-radius: 10px;
+
 }
 
  /* footer style  */
@@ -171,12 +179,36 @@ form button{
      /* Player Media-quary */
 
      .players{
-        
          display: grid;
          grid-template-columns: repeat(1,1fr);
          justify-content: center;
          align-items: center;
      }
+     /* vote media quary */
+    .player-select {
+         width:100%;
+         display: grid;
+         grid-template-columns: repeat(1,1fr);
+         justify-content: center;
+         align-items: center;
+     }
+     fieldset {
+         width: 100%;
+     }
+     .btn{
+         display: flex;
+         justify-content: space-between;
+     }
+
+     /* Match-shedule */
+     .calander{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+     
 
      /* Footer media-quary  */
 
