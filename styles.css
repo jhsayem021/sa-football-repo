@@ -64,6 +64,45 @@
     width: 300px;
  }
 
+ /* player voting  */
+ .vote{
+    background-color: lightskyblue;
+    
+ }
+ .vote-player-heading{
+     padding-top: 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .vote-player{
+     
+     padding:50px 0px 50px 0px ;
+ }
+ .vote img{
+     
+     height: 100px;
+     width: 200px;
+      
+ }
+ /* .vote-player h1{
+     margin-left: 300px;
+     text-align: center;
+ } */
+ .vote-player form{
+     margin: 50px 100px 50px 100px;
+ }
+.player-select{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+form button{
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    
+}
  /* footer style  */
 .container{
     display: flex;
