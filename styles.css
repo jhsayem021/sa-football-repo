@@ -7,21 +7,18 @@
  /* --------------
  Top Section style 
  ----------------*/
- header{
-     background-color:aqua;
- }
+
  .top{
-     display:flex;
-     justify-content: center;
-     padding: 150px 140px 90px 150px;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     background-color: lightskyblue;
+     
  }
  .top-heading{
-    /* padding-left: 153px; */
-    
+       padding: 100px 100px;
  }
- .top-heading h1{
-     margin-top: 30px;
-     margin-bottom: 50px;
+ 
+ .top-heading h1{  
      font-size: 64px;
  }
  .link{
@@ -40,28 +37,25 @@
      text-decoration: none;   
      color: #FFFFFF;    
 }
-
 .top-image{
-    margin-left: 100px;
-    
-
+    padding: 100px 0px 100px 40px;
 }
  .top-image img{
     Width:556.01px;
     Height:438px;
  }
 
- /* player section */
+ /* player section Style */
  .players{
      display: grid;
      grid-template-columns: repeat(3,1fr);
      
-     margin: 70px 150px 0px 90px;
+     margin: 70px 220px 0px 220px;
      
      
  }
  .player{  
-    padding: 15px;
+    padding: 15px 15px 30px 15px;
     margin:10px 20px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); 
  }
@@ -83,5 +77,60 @@
  .container img{
     width: 483.87px;
     height: 110px;
+ }
+ .container p{
+     font-size: 18px;
+ }
+ .ficon i{
+     background-color:lightgray;
+     color: rgba(0, 0, 0, 0.897);
+     font-size: 20px;
+     padding:16px;
+     border-radius: 32px;
+ }
+
+ /* media quary */
+
+ @media only screen and (max-width:668px) {
+
+    /* Top section media-quary  */
+
+     .top{       
+         width: 100%;
+         display:flex;
+         flex-direction: column;
+         align-items: center;       
+     }
+     .top-heading{
+        padding: 0px 100px ;
+     }
+     .top-image img{
+         padding: 100px 0px ;
+        Width :330px;
+        Height:260px;    
+     }
+     
+     /* Player Media-quary */
+
+     .players{
+        
+         display: grid;
+         grid-template-columns: repeat(1,1fr);
+         justify-content: center;
+         align-items: center;
+     }
+
+     /* Footer media-quary  */
+
+     .container{
+        width: 100%;
+        display: flex;   
+    }
+    .container img{
+        width: 300px;
+        height: 90px;
+    }
+     
+     
  }
  
